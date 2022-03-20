@@ -1,7 +1,9 @@
 import { MongoClient } from "mongodb";
+import dotenv from "dotenv";
 
-const mongoURL =
-  "mongodb+srv://ragavendiran:welcome123@cluster0.vcsp8.mongodb.net";
+dotenv.config();
+
+const mongoURL = process.env.MONGO_URL;
 const mongoDbName = "Paripoorna-Placemnet-Project";
 
 const mongo = {
